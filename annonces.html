@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/logo.png">
+    <title>Voir les Annonces - Netflix Covoiturage</title>
+    <link rel="stylesheet" href="css/SAEv2.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.netflix.com" target="_blank">
+                    <img src="image/neflix-logo.png" alt="Logo Netflix">
+                </a>
+            </div>
+            <nav>
+
+                <ul class="nav-left">
+                    <li><a href="Index.html">Accueil</a></li>
+                    <li><a href="proposer.html">Proposer un trajet</a></li>
+                    <li><a href="annonces.html">Voir les annonces</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <a href="signup.html" class="btn">Inscrivez-vous</a>
+                    <a href="connect.html" class="btn">Connectez-vous</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="annonces-section">
+            <h2>Annonces de covoiturage</h2>
+
+
+            <div class="filters">
+                <div class="filter">
+                    <label for="itineraire">Itinéraire</label>
+                    <select id="itineraire" name="itineraire">
+                        <option value="">Sélectionner</option>
+                        <option value="paris-lyon">Paris - Lyon</option>
+                        <option value="marseille-nice">Marseille - Nice</option>
+                        <option value="lille-bruxelles">Lille - Bruxelles</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <label for="date">Date</label>
+                    <select id="date" name="date">
+                        <option value="">Sélectionner</option>
+                        <option value="25-octobre">25 octobre 2024</option>
+                        <option value="27-octobre">27 octobre 2024</option>
+                        <option value="29-octobre">29 octobre 2024</option>
+                    </select>
+                </div>
+
+                <div class="filter">
+                    <label for="places">Nombre de places</label>
+                    <select id="places" name="places">
+                        <option value="">Sélectionner</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <button class="filter-btn">Réinitialiser les filtres</button>
+            </div>
+
+            <div class="annonces-list">
+
+                <article class="annonce">
+                    <h3>Paris - Lyon</h3>
+                    <p>Date : 25 octobre 2024</p>
+                    <p>Heure : 14:00</p>
+                    <p>Places disponibles : 3</p>
+                    <p>Adresse de départ : Gare de Lyon, Paris</p>
+                    <p>Adresse d'arrivée : Gare Part-Dieu, Lyon</p>
+                    <p>Modèle de voiture : Peugeot 308</p>
+                    <p>Couleur : Rouge</p>
+                    <p>Plaque d'immatriculation : AB-123-CD</p>
+                    <p><strong>Participation aux frais : 25 €</strong></p> <!-- Participation aux frais en gras -->
+                    <a href="contact.html" class="btn">Contacter le conducteur</a>
+                </article>
+
+
+                <article class="annonce">
+                    <h3>Marseille - Nice</h3>
+                    <p>Date : 27 octobre 2024</p>
+                    <p>Heure : 09:00</p>
+                    <p>Places disponibles : 2</p>
+                    <p>Adresse de départ : Gare Saint-Charles, Marseille</p>
+                    <p>Adresse d'arrivée : Gare de Nice-Ville, Nice</p>
+                    <p>Modèle de voiture : Renault Clio</p>
+                    <p>Couleur : Bleu</p>
+                    <p>Plaque d'immatriculation : XY-456-ZZ</p>
+                    <p><strong>Participation aux frais : 20 €</strong></p> <!-- Participation aux frais en gras -->
+                    <a href="contact.html" class="btn">Contacter le conducteur</a>
+                </article>
+
+
+                <article class="annonce">
+                    <h3>Lille - Bruxelles</h3>
+                    <p>Date : 29 octobre 2024</p>
+                    <p>Heure : 17:00</p>
+                    <p>Places disponibles : 4</p>
+                    <p>Adresse de départ : Gare Lille Flandres, Lille</p>
+                    <p>Adresse d'arrivée : Gare de Bruxelles-Central, Bruxelles</p>
+                    <p>Modèle de voiture : BMW Série 1</p>
+                    <p>Couleur : Noir</p>
+                    <p>Plaque d'immatriculation : ZZ-789-XY</p>
+                    <p><strong>Participation aux frais : 30 €</strong></p> <!-- Participation aux frais en gras -->
+                    <a href="contact.html" class="btn">Contacter le conducteur</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Netflix Covoiturage. Tous droits réservés. | <a href="https://about.netflix.com/fr/news/update-on-sharing-may-fr" target="_blank">Conditions d'utilisation</a> | <a href="https://help.netflix.com/en/node/100628" target="_blank">Politique de confidentialité</a></p>
+    </footer>
+</body>
+
+</html>

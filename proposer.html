@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/logo.png">
+    <title>Proposer un trajet - Netflix Covoiturage</title>
+    <link rel="stylesheet" href="css/SAEv2.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://www.netflix.com" target="_blank">
+                    <img src="image/neflix-logo.png" alt="Logo Netflix">
+                </a>
+            </div>
+            <nav>
+
+                <ul class="nav-left">
+                    <li><a href="Index.html">Accueil</a></li>
+                    <li><a href="proposer.html">Proposer un trajet</a></li>
+                    <li><a href="annonces.html">Voir les annonces</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <a href="signup.html" class="btn">Inscrivez-vous</a>
+                    <a href="connect.html" class="btn">Connectez-vous</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="signup-section">
+            <div class="form-container">
+                <h2><strong>Proposer un trajet</strong></h2>
+
+                <p>Remplissez le formulaire ci-dessous pour proposer un trajet en covoiturage.</p>
+
+                <!-- Formulaire -->
+                <form action="Poster.html" method="GET">
+                    <label for="email">Votre email :</label>
+                    <input type="email" id="email" name="email" required placeholder="Entrez votre adresse email">
+
+                    <label for="depart">Point de départ :</label>
+                    <input type="text" id="depart" name="depart" required placeholder="Ville et adresse de départ">
+
+                    <label for="arrivee">Point d'arrivée :</label>
+                    <input type="text" id="arrivee" name="arrivee" required placeholder="Ville et adresse d'arrivée">
+
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="heure">Heure :</label>
+                    <input type="time" id="heure" name="heure" required>
+
+                    <label for="modele">Modèle de voiture :</label>
+                    <input type="text" id="modele" name="modele" required placeholder="Ex : Renault Clio">
+
+                    <label for="couleur">Couleur de la voiture :</label>
+                    <input type="text" id="couleur" name="couleur" required placeholder="Ex : Rouge">
+
+                    <label for="plaque">Plaque d'immatriculation :</label>
+                    <input type="text" id="plaque" name="plaque" required placeholder="Ex : AB-123-CD">
+
+                    <label for="places">Nombre de places disponibles :</label>
+                    <input type="number" id="places" name="places" min="1" max="10" required placeholder="Nombre de places">
+
+                    <label for="frais">Participation aux frais : </label>
+                    <input type="number" id="frais" name="frais" min="0" required placeholder="Les frais en Euros">
+
+                    <label for="commentaires">Commentaires :</label>
+                    <textarea id="commentaires" name="commentaires" rows="4" placeholder="Ajoutez des détails supplémentaires si nécessaire"></textarea>
+
+                    
+                    <button type="submit">Proposer ce trajet</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Netflix Covoiturage. Tous droits réservés. | <a href="https://about.netflix.com/fr/news/update-on-sharing-may-fr" target="_blank">Conditions d'utilisation</a> | <a href="https://help.netflix.com/en/node/100628" target="_blank">Politique de confidentialité</a></p>
+    </footer>
+</body>
+
+</html>
